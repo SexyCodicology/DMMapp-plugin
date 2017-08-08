@@ -15,7 +15,7 @@ _gaq.push(['_trackPageview']);
 */
 
 //SEARCHBOX STUFF
-
+/*
 window.addEventListener('DOMContentLoaded', function () {
     var link = document.getElementById('btnOpenNewTab');
     var searchstring = $('input[id=searchInput]');
@@ -25,4 +25,4 @@ window.addEventListener('DOMContentLoaded', function () {
             url: newURL
         });
     });
-});
+}); */
