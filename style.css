@@ -83,12 +83,3 @@ input[type=submit] {
     border-radius: 5px;
     background: #ccc;
 }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-p {
-    font-family: vestula, arial, sans-serif;
-}
