@@ -26,3 +26,31 @@ window.addEventListener('DOMContentLoaded', function () {
         });
     });
 }); */
+$(document).ready(function () {
+
+    var options = {
+        url: "js/data.json",
+
+        getValue: "Library",
+
+        template: {
+            type: "links",
+            fields: {
+                link: "Website"
+            }
+
+        },
+        list: {
+            maxNumberOfElements: 4,
+            match: {
+                enabled: true
+            },
+            sort: {
+                enabled: true
+            }
+        },
+    };
+    $("#data-json").easyAutocomplete(options);
+
+    console.log("ready!");
+});
