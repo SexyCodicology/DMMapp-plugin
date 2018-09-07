@@ -2,37 +2,64 @@
 <html>
 
 <head>
-    <title>Sexy Codicology Plugin</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="/js/jquery-3.2.1.slim.min.js"></script>
+    <meta charset="utf-8">
+    <title>DMMapp Plugin</title>
+    <script src="/js/jquery-3.2.1.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/jquery.easy-autocomplete.js"></script>
     <script src="/js/options.js"></script>
-
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
-<body class="main">
-    <div id="container" class="initialized">
-        <div id="branding">
-            <div id="logo">
-                <a href="https://sexycodicology.net" target="_blank">
-                    <img alt="Sexy Codicology Logo" src="/images/icons/sexycodicology_logo.png">
-                </a>
+<body>
+    <nav class="navbar navbar-default">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="https://sexycodicology.net/blog/?utm_source=DMMapp_plugin" target="_blank"><img alt="Sexy Codicology Logo" src="images/icons/icon48.png"></a>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                <li> <a href="https://digitizedmedievalmanuscripts.org/app/?utm_source=DMMapp_plugin" target="_blank" title="Access the full DMMapp webapp">DMMapp <span class="glyphicon glyphicon-new-window"></span></a> </li>
+                <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">About Us <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li> <a href="https://sexycodicology.net/blog/about/?utm_source=DMMapp_plugin" target="_blank">The Sexy Codicology Team <span class="glyphicon glyphicon-new-window"></span></a> </li>
+                        <li> <a href="https://www.patreon.com/bePatron?c=424150" target="_blank">Support us! <span class="glyphicon glyphicon-new-window"></span></a> </li>
+                        <li> <a href="https://sexycodicology.net/blog/contact-us/?utm_source=DMMapp_plugin" target="_blank">Report an issue <span class="glyphicon glyphicon-new-window"></span></a> </li>
+                        <li> <a href="https://www.facebook.com/SexyCodicology" target="_blank">Facebook <span class="glyphicon glyphicon-new-window"></span></a> </li>
+                        <li> <a href="https://twitter.com/sexycodicology" target="_blank">Twitter <span class="glyphicon glyphicon-new-window"></span></a> </li>
+                    </ul>
+                </li>
+                <li> <a href="https://sexycodicology.net/blog/dmmapp-plugin-help/?utm_source=DMMapp_plugin" target="_blank" title="What is this plugin?">Help <span class="glyphicon glyphicon-new-window"></span></a> </li>
+            </ul>
+        </div>
+    </nav>
+    <section>
+        <div id="infoContainer" class="header">
+            <div class="help">
+                <a class="btn btn-primary btn-md help" id="helpbtn"role="button">How to use this plugin</a> 
             </div>
-            <div id="title">
-                <h1>Sexy Codicology Plugin</h1>
+            <div class="info">
+            <p>This plugin allows you to query the DMMapp database without going to the DMMapp. Simply start typing in the search box.</p>
+            <p>You can search by:
+                <td>
+                    <ul><strong>Library</strong> ("Getty", "Laurenziana", etc.)</ul>
+                    <ul><strong>Country</strong> ("Italy", "France", etc.)</ul>
+                    <ul><strong>City</strong> ("Rome", "Oxford", etc.)</ul>
+                </td>
+            </p>
             </div>
         </div>
         <div id="searchContainer" class="header">
             <div class="searchInputContainer">
-                <input id="searchInput" class="dialogInput searchInput" type="text" placeholder="Search for a repository..."><br><br>
-                <input type="submit" id="btnOpenNewTab" value="search" />
+                <input id="data-json" class="dialogInput searchInput" type="text" placeholder="Search for a repository..." /> </div>
+        </div>
+        <div class="extras">
+            <div class="buttons">
+                <a class="btn btn-primary btn-md" href="https://sexycodicology.net/blog/contact-us/send-us-tip/?utm_source=DMMapp_plugin" target="_blank" role="button">Submit a missing repository <span class="glyphicon glyphicon-new-window"></span></a>
+                <a class="btn btn-danger btn-md" href="https://www.patreon.com/bePatron?c=424150" target="_blank" role="button">Support us! <span class="glyphicon glyphicon-new-window"></span></a>
             </div>
         </div>
-        <div id="instructions">
-            <h3>How to use the Sexy Codicology plugin</h3>
-            <p>Simply start typing the name of the repository you are looking for. If it's in our database, it'll pop up!
-            </p>
-        </div>
-    </div>
+    </section>
 </body>
 
 </html>

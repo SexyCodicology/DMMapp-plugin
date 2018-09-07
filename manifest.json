@@ -1,15 +1,15 @@
 {
     "manifest_version": 2,
 
-    "name": "Sexy Codicology Plugin",
-    "description": "A chrome plugin to find your digitized medeival manuscripts repositories on the fly!",
-    "version": "1.0",
-    "author": "Giulio Menna & Marjolein de Vos",
-    "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
+    "name": "DMMapp Plugin",
+    "description": "A plugin to find your digitized medieval manuscript repositories on the fly!",
+    "version": "1.5.1",
+    "author": "Giulio Menna, Marjolein de Vos",
+    "content_security_policy": "script-src 'self'; object-src 'self'",
     "browser_action": {
         "default_icon": "/images/icons/icon128.png",
         "default_popup": "popup.html",
-        "default_title": "Sexy Codicology Plugin"
+        "default_title": "DMMapp Plugin"
     },
     "icons": { "16": "/images/icons/icon16.png",
            "48": "/images/icons/icon48.png",
@@ -19,9 +19,6 @@
         "persistent": false
     },
     "permissions": [
-    "contextMenus",
-    "activeTab",
-    "tabs",
-    "https://ajax.googleapis.com/"
+    "https://digitizedmedievalmanuscripts.org/app/"
   ]
 }
